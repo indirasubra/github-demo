@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+</head>
+<body> 
+
+<center>
+<h1 class="ui header">
+Momentos Learning Enhancement System for University and College Students</h1>
+</center>
+
+
+<h2 class="ui header">
+What is Momentos?</h2>
+Momentos is a self-serve, student-driven, instructor-controlled Learning Enhancement System (LES) that offers an easily accessible, inexpensive classroom lecture capture and an AI-driven service to improve learning outcomes for university and college students. The existing solutions for lecture capture and enhancement are not easily accessible to every classroom in colleges and universities. Furthermore they do not adequately exploit the advances in modern technologies that are becoming both inexpensive and increasingly commoditized. We believe that with advanced technologies, significant additional improvement in learning outcomes is possible in both flipped classrooms and conventional ones. 
+
+<!--
+Include a  1 minute video that will inspire the website visitor to want to learn more.
+
+<h2 class="ui header">
+Want to learn more? Request a demo video.</h2>
+-->
+	
+
+<form class="ui form">
+	<h4 class="ui dividing header">Want to learn more? Request a demo video by providing the following information:</h4>
+
+<!-- Status:  instructor  / student -->
+	<div class="two wide field">
+ 		<label>Status</label>
+		<select class="ui fluid dropdown">
+			<option value="">Status</option>
+	<option value="I">Instructor</option>
+ 	<option value="S">Student</option>
+ 		</select>
+	</div>
+
+<!-- Name: -->
+  <div class="three fields">
+    <div class="field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+  </div>
+
+<!-- Department / Major:                        University: -->
+  <div class="two fields">
+		<div class="field">
+ 			<label>Department / Major</label>
+			<select class="ui fluid dropdown">
+				<option value="">Department / Major</option>
+		<option value="EE">Electrical Engineering</option>
+		<option value="ME">Mechanical Engineering</option>
+		<option value="CE">Chemical Engineering</option>
+		<option value="CS">Computer Science</option>
+ 		<option value="BIO">Biology</option>
+		<option value="PSY">Psychology</option>
+ 		<option value="PHIL">Philosophy</option>
+		<option value="ENG">English</option>
+ 		<option value="ECON">Economics</option>
+ 		<option value="MED">Medicine</option>
+		<option value="OT">Other</option>
+ 			</select>
+		</div>
+    <div class="field">
+      <label>University / College</label>
+      <input type="text" placeholder="University / College">
+    </div>
+	</div>
+
+<!-- Email Address [.edu only]: -->
+  <div class="field">
+    <label>E-mail [.edu ONLY]</label>
+    <input type="email" placeholder="joe@AnyUniversity.edu">
+  </div>
+
+<!-- How did you hear about us:  instructor / student / email / web / other -->
+	<div class="field">
+ 		<label>How did you hear about us?</label>
+		<select class="ui fluid dropdown">
+			<option value="">How did you hear about us</option>
+	<option value="I">Instructor</option>
+	<option value="S">Student</option>
+	<option value="EM">E-mail</option>
+	<option value="BL">Blog</option>
+ 	<option value="WEB">Web</option>
+	<option value="OT">Other</option>
+		</select>
+	</div>
+
+	<div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+
+
+<h2 class="ui header">
+How Does Momentos Work?</h2>
+In any course, a  student can record a classroom lecture with permission from the instructor and upload it to the Momentos LES. Alternatively, an instructor can request a TA or a student to record the lecture via Momentos. The recording TA or student uses the Momentos smartphone app to record the course lectures. Subsequently, students enrolled in the class are able to access the lectures along with the AI-driven features of Momentos. 
+
+
+<h2 class="ui header">
+The Momentos Beta Program FAQ</h2>
+<div class="ui accordion">
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		What is the Beta Program?
+	</div>
+	<div class="active content">
+		<p> The Momentos Beta program makes Momentos available to classrooms. The primary goals are: (1) learn how students use the product, and improve the student interaction with the product,(2) Gather feedback from instructors and students, and (3) demonstrate the benefits of making searchable video recordings of classroom lectures to students.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		Where is the Beta Program offered?
+	</div>
+	<div class="active content">
+		<p>We are offering the beta program for universities and colleges in the United States.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		What features of Momentos are supported during the beta program?
+	</div>
+	<div class="active content">
+		<p>Features include video recording of classroom lectures, nearly accurate transcription, and keyword search within videos.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		How does an instructor request to participate in the beta program?
+	</div>
+	<div class="active content">
+		<p>An instructor can make a participation request by providing the necessary information [hyperlink that takes to the section titled Instructors -- How to Enroll in the Beta Program below].</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		How does a student request to participate in the beta program?
+	</div>
+	<div class="active content">
+		<p>A student can make a participation request by providing the necessary information [hyperlink that takes to the section titled Students -- How to Enroll in the Beta Program below].</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		How much does Momentos cost?  
+	</div>
+	<div class="active content">
+		<p>Students in courses that onboarded for the beta program through December 2018 get to use all the features of the Momentos platform for these courses free of charge. In the next several months, we will be announcing the pricing.</p>
+	</div>
+
+</div>
+
+
+<h2 class="ui header">
+Momentos General FAQ</h2>
+<div class="ui accordion">
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		Who will record the lectures in a course? 
+	</div>
+	<div class="active content">
+		<p>Any student enrolled in the course or the course TA or anyone else chosen by the course instructor can video record a lecture using his or her mobile phone through the Momentos recording app. Android and iOS versions are available.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		How will an instructor facilitate the lecture recording? 
+	</div>
+	<div class="active content">
+		<p>Any student enrolled in the course or the course TA will be able to sign up to video record a lecture.  This student or the TA will seek permission for recording  from the instructor prior to commencement of the lecture. The Momentos platform will communicate directly with the instructor to verify that the permission to record has been granted.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		Who owns the recorded lectures?
+	</div>
+	<div class="active content">
+		<p>The lecture recording is typically the Intellectual Property (IP) of the instructors that delivered the lecture. Once a student completes the video recording of a lecture using the Momentos recording app (iOS and Android versions are available), the video is uploaded automatically to the Momentos backend of EITR Systems, Inc., the maker of the Momentos product. By agreeing to use Momentos for the course, the IP owner grants the right to Momentos to  (a) host the video lectures and (b) make these videos accessible to users who were authorized by the IP owner.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		Who will be able to access the recorded lectures?
+	</div>
+	<div class="active content">
+		<p>The course instructors, TAs and students that are officially enrolled in the course are the only ones that will be able to view the recorded lectures and use Momentos features such as transcription, video captions, and video search. </p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		Who can download the recorded lectures?
+	</div>
+	<div class="active content">
+		<p>Momentos allows students enrolled in a course to access the recorded lectures exclusively through the Momentos web interface.  Recorded lectures cannot be downloaded by anyone from the Momentos website.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		Until when will the recorded lectures be accessible?
+	</div>
+	<div class="active content">
+		<p>Recorded lectures will be accessible only as long as designated by the course instructors. Typically an instructor would want lectures to be accessible up until the finals and require that the lectures be taken down immediately after the finals. Some instructors instead could choose to make the lectures accessible for a longer duration based on their preferences.  This decision is entirely up to the course instructors.</p>
+	</div>
+
+</div>
+
+
+<h2 class="ui header">
+Momentos Benefits FAQ</h2>
+<div class="ui accordion">
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		What benefits does Momentos offer to students? 
+	</div>
+	<div class="active content">
+		<p>With Momentos, students will be able to give undivided attention to the instructor’s lecture in the classroom. They may intermittently take personal notes if desired for reference later. After the class, they will be able to revisit the video recordings and access targeted points in the lecture video using keyword search of transcription provided by Momentos.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		What benefits does Momentos offer to instructors? 
+	</div>
+	<div class="active content">
+		<p>First, since students have the ability to revisit the lecture using Momentos video recordings and they can do focused learning using search, they can learn more effectively and efficiently. Second, Momentos offers data analysis on how students are using the recordings thereby providing key insights for instructors and Universities. Using these insights, instructors could organize future lecture content placing emphasis on concepts that are relatively challenging to the students. With students learning better through Momentos, instructors will need to spend less time in open office hours.</p>
+	</div>
+
+	<div class="active title">
+		<i class="dropdown icon"></i>
+		What benefits does Momentos offer to Teaching Assistants (TAs)? 
+	</div>
+	<div class="active content">
+		<p>Since students have the ability to revisit the lecture using Momentos video recordings and they can do focused learning using search, they can learn more effectively and efficiently.  Momentos therefore is essentially a TA’s assistant in helping students do well in a course. TAs can use their time to broaden the scope of helping students --- inspire and help students above and beyond the classroom to make them better learners.</p>
+	</div>
+
+</div>
+
+
+
+<h2 class="ui header">
+Instructors -- How to Enroll in the Beta Program</h2>
+<form class="ui form">
+	<h4 class="ui dividing header">Instructors interested in the Momentos beta program for their course, please sign up here:</h4>
+
+<!-- Name: -->
+  <div class="three fields">
+    <div class="field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+  </div>
+
+<!-- Department / Major:                        University: -->
+  <div class="two fields">
+		<div class="field">
+ 			<label>Department / Major</label>
+			<select class="ui fluid dropdown">
+				<option value="">Department / Major</option>
+		<option value="EE">Electrical Engineering</option>
+		<option value="ME">Mechanical Engineering</option>
+		<option value="CE">Chemical Engineering</option>
+		<option value="CS">Computer Science</option>
+ 		<option value="BIO">Biology</option>
+		<option value="PSY">Psychology</option>
+ 		<option value="PHIL">Philosophy</option>
+		<option value="ENG">English</option>
+ 		<option value="ECON">Economics</option>
+ 		<option value="MED">Medicine</option>
+		<option value="OT">Other</option>
+ 			</select>
+		</div>
+    <div class="field">
+      <label>University / College</label>
+      <input type="text" placeholder="University / College">
+    </div>
+	</div>
+
+<!-- Email Address [.edu only]: -->
+  <div class="field">
+    <label>E-mail [.edu ONLY]</label>
+    <input type="email" placeholder="joe@AnyUniversity.edu">
+  </div>
+
+<!-- How did you hear about us:  instructor / student / email / web / other -->
+	<div class="field">
+ 		<label>How did you hear about us?</label>
+		<select class="ui fluid dropdown">
+			<option value="">How did you hear about us</option>
+	<option value="I">Instructor</option>
+	<option value="S">Student</option>
+	<option value="EM">E-mail</option>
+	<option value="BL">Blog</option>
+ 	<option value="WEB">Web</option>
+	<option value="OT">Other</option>
+		</select>
+	</div>
+
+	<div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+
+<h2 class="ui header">
+Students -- How to Enroll in the Beta Program</h2>
+Students who are interested in getting their instructors enroll in this beta program, please reach out to your instructors, make them aware of this program and have them sign up! Thank you! 
+<form class="ui form">
+	<h4 class="ui dividing header">Please let us know that you have done so by filling out the following information for yourself:</h4>
+
+<!-- Name: -->
+  <div class="three fields">
+    <div class="field">
+      <label>First name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Middle name</label>
+      <input type="text" placeholder="Middle Name">
+    </div>
+    <div class="field">
+      <label>Last name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+  </div>
+
+<!-- Department / Major:                        University: -->
+  <div class="two fields">
+		<div class="field">
+ 			<label>Department / Major</label>
+			<select class="ui fluid dropdown">
+				<option value="">Department / Major</option>
+		<option value="EE">Electrical Engineering</option>
+		<option value="ME">Mechanical Engineering</option>
+		<option value="CE">Chemical Engineering</option>
+		<option value="CS">Computer Science</option>
+ 		<option value="BIO">Biology</option>
+		<option value="PSY">Psychology</option>
+ 		<option value="PHIL">Philosophy</option>
+		<option value="ENG">English</option>
+ 		<option value="ECON">Economics</option>
+ 		<option value="MED">Medicine</option>
+		<option value="OT">Other</option>
+ 			</select>
+		</div>
+    <div class="field">
+      <label>University / College</label>
+      <input type="text" placeholder="University / College">
+    </div>
+	</div>
+
+<!-- Email Address [.edu only]: -->
+  <div class="field">
+    <label>E-mail [.edu ONLY]</label>
+    <input type="email" placeholder="joe@AnyUniversity.edu">
+  </div>
+
+<!-- How did you hear about us:  instructor / student / email / web / other -->
+	<div class="field">
+ 		<label>How did you hear about us?</label>
+		<select class="ui fluid dropdown">
+			<option value="">How did you hear about us</option>
+	<option value="I">Instructor</option>
+	<option value="S">Student</option>
+	<option value="EM">E-mail</option>
+	<option value="BL">Blog</option>
+ 	<option value="WEB">Web</option>
+	<option value="OT">Other</option>
+		</select>
+	</div>
+
+
+  <div class="field">
+    <label>Courses for which you have requested your instructors to enroll ---- one per line:</label>
+    <textarea rows="6"></textarea>
+  </div>
+
+	<div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+<center>
+<h5 class="ui header">
+We look forward to your participation in the Momentos Beta program!</h5>
+////////////////////////
+</center>
+
+</body>
+</html>
+
